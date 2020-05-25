@@ -130,6 +130,6 @@ end
 def num_points_scored(name)
   #find the player depending on team
   team = nil 
-  if home[:players].any?
+  if home[:players].any?()
   #find the score
 end
