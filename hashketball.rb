@@ -190,7 +190,6 @@ def player_numbers(name)
     return nil
   end
   
-  
-  stats
+  stats[:home][:player_namey]
   
 end
