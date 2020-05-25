@@ -138,7 +138,7 @@ def num_points_scored(name)
   }
   stats[:away][:players].each { |player|
     if player[:player_name] == name
-      team = :home
+      team = :away
     end
   }
   #find the score
