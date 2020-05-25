@@ -132,6 +132,7 @@ def num_points_scored(name)
   team = nil 
   home[:players].each { |player|
     
+    
   }
   #find the score
 end
