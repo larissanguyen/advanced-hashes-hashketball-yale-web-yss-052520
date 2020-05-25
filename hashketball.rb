@@ -196,3 +196,4 @@ def player_numbers(name)
   return jersey_nums
 end
 
+def big_shoe_rebounds
