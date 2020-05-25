@@ -157,4 +157,5 @@ end
 
 def team_colors(name)
   stats = game_hash
+  if stats
 end
