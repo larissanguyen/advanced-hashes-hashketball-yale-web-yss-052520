@@ -133,7 +133,7 @@ stats = game_hash
   player_stats = nil 
   stats[:home][:players].each { |player|
     if player[:player_name] == name
-      player_stats = player[:points]
+      player_stats = player
     end
   }
   stats[:away][:players].each { |player|
