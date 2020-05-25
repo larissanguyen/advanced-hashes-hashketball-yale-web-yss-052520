@@ -169,3 +169,6 @@ end
 
 def team_names
   stats = game_hash
+  stats.each {
+    
+  }
