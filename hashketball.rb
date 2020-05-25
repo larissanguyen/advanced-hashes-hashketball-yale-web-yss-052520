@@ -127,3 +127,87 @@ def game_hash
 end
 
 # Write code here
+
+def player_stats(name)
+  stats = game_hash
+  #find the player depending on team
+  player_stats = nil 
+  stats[:home][:players].each { |player|
+    if player[:player_name] == name
+      player_stats = player
+    end
+  }
+  stats[:away][:players].each { |player|
+    if player[:player_name] == name
+      player_stats = player
+    end
+  }
+  player_stats
+end
+
+def num_points_scored(name)
+  stats = player_stats(name)
+  stats[:points]
+end
+
+def shoe_size(name)
+  stats = player_stats(name)
+  stats[:shoe]
+end
+
+def team_colors(name)
+  stats = game_hash
+  if stats[:home][:team_name] == name
+    return stats[:home][:colors]
+  elsif stats[:away][:team_name] == name
+    return stats[:away][:colors]
+  else
+    puts "That team isn't playing"
+    return nil
+  end
+end
+
+def team_names
+  stats = game_hash
+  names = []
+  stats.each { |team, info|
+    names << info[:team_name]
+  }
+  names
+end
+
+def player_numbers(name)
+  jersey_nums = []
+  stats = game_hash
+  team = nil
+  
+  if stats[:home][:team_name] == name
+    team = :home
+  elsif stats[:away][:team_name] == name
+    team = :away
+  else
+    puts "That team isn't playing"
+    return nil
+  end
+  
+  stats[team][:players].each { |player_hash|
+    jersey_nums << player_hash[:number]
+  }
+  return jersey_nums
+end
+
+def big_shoe_rebounds
+  stats = game_hash
+  num_rebounds = nil
+  largest_shoe_size = nil
+  
+  stats.each { |team, team_hash|
+    team_hash[:players].each { |player_hash|
+      if largest_shoe_size == nil or player_hash[:shoe] > largest_shoe_size
+        num_rebounds = player_hash[:rebounds]
+        largest_shoe_size = player_hash[:shoe]
+      end
+    }
+  }
+  num_rebounds
+end
