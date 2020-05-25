@@ -173,3 +173,5 @@ def team_names
   stats.each { |team, info|
     names << info[:team_name]
   }
+  names
+end
