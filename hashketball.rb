@@ -198,5 +198,5 @@ end
 
 def big_shoe_rebounds
   num_rebounds = nil
-  largest_shoe_size
+  largest_shoe_size = nil
 end
