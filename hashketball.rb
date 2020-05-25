@@ -128,6 +128,21 @@ end
 
 # Write code here
 def player_stats(name)
+stats = game_hash
+  #find the player depending on team
+  player_stats = nil 
+  stats[:home][:players].each { |player|
+    if player[:player_name] == name
+      score = player[:points]
+    end
+  }
+  stats[:away][:players].each { |player|
+    if player[:player_name] == name
+      score = player[:points]
+    end
+  }
+  score
+end
 
 def num_points_scored(name)
   stats = game_hash
