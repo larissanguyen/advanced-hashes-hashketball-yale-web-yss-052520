@@ -146,7 +146,7 @@ def player_stats(name)
 end
 
 def num_points_scored(name)
-  player_stats(name)
+  stats = player_stats(name)
 end
 
 def shoe_size(name)
