@@ -185,6 +185,7 @@ def player_numbers(name)
     puts "home"
     team = :home
   elsif stats[:away][:team_name] == name
+    
     team = :away
   else
     puts "That team isn't playing"
