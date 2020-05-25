@@ -182,7 +182,7 @@ def player_numbers(name)
   team = nil
   
   if stats[:home][:team_name] == name
-    
+    puts "home"
     team = :home
   elsif stats[:away][:team_name] == name
     team = :away
