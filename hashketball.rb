@@ -203,7 +203,7 @@ def big_shoe_rebounds
   
   stats.each { |team, team_hash|
     team_hash[:players].each { |player_hash|
-      if player_hash[:shoe_size]
+      if player_hash[:shoe]
     }
   }
   
