@@ -152,5 +152,5 @@ end
 
 def shoe_size(name)
   stats = player_stats(name)
-  stats[:points]
+  stats[:shoe]
 end
