@@ -162,5 +162,6 @@ def team_colors(name)
   elsif stats[:away][:team_name] = name
     return stats[:away][:colors]
   else
-    puts 
+    puts "That team isn't playing"
+    
 end
