@@ -179,7 +179,7 @@ end
 def player_numbers(team_name)
   jersey_nums = []
   stats = game_hash
-  stats.each{ |team, info|
+  stats.each{ |home_or_away, team_info|
     
     
   }
