@@ -151,4 +151,6 @@ def num_points_scored(name)
 end
 
 def shoe_size(name)
+  stats = player_stats(name)
+  stats[:points]
 end
