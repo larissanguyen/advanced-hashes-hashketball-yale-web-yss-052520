@@ -190,7 +190,7 @@ def player_numbers(name)
     return nil
   end
   
-  stats[:home][:players].each {
+  stats[:home][:players].each { |player_hash|
     
   }
   
