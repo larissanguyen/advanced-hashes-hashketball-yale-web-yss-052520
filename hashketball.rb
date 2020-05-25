@@ -190,6 +190,8 @@ def player_numbers(name)
     return nil
   end
   
-  stats[:home][:players]
+  stats[:home][:players].each {
+    
+  }
   
 end
