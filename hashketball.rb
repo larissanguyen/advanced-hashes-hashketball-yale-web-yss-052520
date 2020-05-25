@@ -193,7 +193,7 @@ def player_numbers(name)
   stats[:home][:players].each { |player_hash|
     jersey_nums << player_hash[:number]
   }
-  return jersey_nums
+  pp jersey_nums
 end
 
 player_numbers("Charlotte Hornets")
