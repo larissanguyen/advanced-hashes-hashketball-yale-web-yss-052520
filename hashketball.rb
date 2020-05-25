@@ -197,5 +197,6 @@ def player_numbers(name)
 end
 
 def big_shoe_rebounds
-
+  num_rebounds
+  largest_shoe_size
 end
