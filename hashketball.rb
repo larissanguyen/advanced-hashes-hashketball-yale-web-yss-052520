@@ -182,20 +182,16 @@ def player_numbers(name)
   team = nil
   
   if stats[:home][:team_name] == name
-    puts "home"
     team = :home
   elsif stats[:away][:team_name] == name
-    
     team = :away
   else
     puts "That team isn't playing"
     return nil
   end
   
-  stats[:home][:players].each { |player_hash|
+  stats[t][:players].each { |player_hash|
     jersey_nums << player_hash[:number]
   }
-  pp jersey_nums
+  return jersey_nums
 end
-
-player_numbers("Charlotte Hornets")
