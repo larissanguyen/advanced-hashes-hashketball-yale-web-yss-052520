@@ -163,5 +163,5 @@ def team_colors(name)
     return stats[:away][:colors]
   else
     puts "That team isn't playing"
-    
+    return nil
 end
