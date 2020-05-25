@@ -191,9 +191,6 @@ def player_numbers(name)
   end
   
   
-  stats.each{ |home_or_away, team_info|
-    team_info[:players].each {
-      
-    }
-  }
+  stats
+  
 end
