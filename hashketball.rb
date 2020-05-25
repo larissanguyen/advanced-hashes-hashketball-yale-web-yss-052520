@@ -129,7 +129,7 @@ end
 # Write code here
 
 def player_stats(name)
-stats = game_hash
+  stats = game_hash
   #find the player depending on team
   player_stats = nil 
   stats[:home][:players].each { |player|
