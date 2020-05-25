@@ -180,6 +180,7 @@ def player_numbers(name)
   jersey_nums = []
   stats = game_hash
   team = nil
+  
   if stats[:home][:team_name] == name
     team = :home
   elsif stats[:away][:team_name] == name
