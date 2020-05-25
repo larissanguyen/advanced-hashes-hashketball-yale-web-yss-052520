@@ -183,6 +183,5 @@ def player_numbers(team_name)
     team_info[:players].each {
       
     }
-    
   }
 end
