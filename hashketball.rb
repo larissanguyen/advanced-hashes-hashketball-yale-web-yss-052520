@@ -176,7 +176,7 @@ def team_names
   names
 end
 
-def player_numbers(team_name)
+def player_numbers(name)
   jersey_nums = []
   stats = game_hash
   if stats[:home][:team_name] == name
