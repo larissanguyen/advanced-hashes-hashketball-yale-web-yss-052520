@@ -197,6 +197,6 @@ def player_numbers(name)
 end
 
 def big_shoe_rebounds
-  num_rebounds
+  num_rebounds = nil
   largest_shoe_size
 end
