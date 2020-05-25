@@ -191,7 +191,7 @@ def player_numbers(name)
   end
   
   stats[:home][:players].each { |player_hash|
-    jersey_nums << player_hash[]
+    jersey_nums << player_hash[number]
     
   }
   
