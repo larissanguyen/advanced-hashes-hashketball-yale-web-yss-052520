@@ -129,6 +129,7 @@ end
 # Write code here
 def num_points_scored(name)
   #find the player depending on team
-  team = nil
+  team = nil 
+  
   #find the score
 end
