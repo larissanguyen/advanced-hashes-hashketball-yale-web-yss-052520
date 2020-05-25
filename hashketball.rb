@@ -133,7 +133,7 @@ def num_points_scored(name)
   score = nil 
   stats[:home][:players].each { |player|
     if player[:player_name] == name
-      team = :home
+      score = :home
     end
   }
   stats[:away][:players].each { |player|
