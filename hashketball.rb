@@ -128,7 +128,7 @@ end
 
 # Write code here
 def num_points_scored(name)
-  
+  game_hash
   #find the player depending on team
   team = nil 
   home[:players].each { |player|
