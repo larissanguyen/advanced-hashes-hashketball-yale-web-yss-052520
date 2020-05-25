@@ -183,7 +183,7 @@ def player_numbers(name)
   if stats[:home][:team_name] == name
     team = :home
   elsif stats[:away][:team_name] == name
-    return stats[:away][:colors]
+    team = :away
   else
     puts "That team isn't playing"
     return nil
