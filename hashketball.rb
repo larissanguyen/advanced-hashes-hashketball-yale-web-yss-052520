@@ -202,7 +202,7 @@ def big_shoe_rebounds
   largest_shoe_size = nil
   
   stats.each { |team, team_hash|
-    team_hash[:players].each { ||
+    team_hash[:players].each { |player_hash|
       
     }
   }
