@@ -141,4 +141,5 @@ def num_points_scored(name)
       score = player[:points]
     end
   }
+  score
 end
