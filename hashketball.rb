@@ -133,7 +133,7 @@ def num_points_scored(name)
   home[:players].each { |player|
     if player[:player_name] == name
       team = :home
-    
+    end
   }
   #find the score
 end
