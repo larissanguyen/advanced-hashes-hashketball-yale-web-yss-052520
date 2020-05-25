@@ -179,6 +179,16 @@ end
 def player_numbers(team_name)
   jersey_nums = []
   stats = game_hash
+  if stats[:home][:team_name] == name
+    return stats[:home][:colors]
+  elsif stats[:away][:team_name] == name
+    return stats[:away][:colors]
+  else
+    puts "That team isn't playing"
+    return nil
+  end
+  
+  
   stats.each{ |home_or_away, team_info|
     team_info[:players].each {
       
