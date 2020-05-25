@@ -161,4 +161,6 @@ def team_colors(name)
     return stats[:home][:colors]
   elsif stats[:away][:team_name] = name
     return stats[:away][:colors]
+  else
+    puts 
 end
