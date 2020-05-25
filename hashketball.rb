@@ -141,7 +141,7 @@ stats = game_hash
       player_stats = player
     end
   }
-  score
+  player_stats
 end
 
 def num_points_scored(name)
