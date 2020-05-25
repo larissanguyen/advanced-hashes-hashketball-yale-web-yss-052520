@@ -164,4 +164,5 @@ def team_colors(name)
   else
     puts "That team isn't playing"
     return nil
+  end
 end
