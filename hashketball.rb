@@ -181,7 +181,7 @@ def player_numbers(name)
   stats = game_hash
   team = nil
   if stats[:home][:team_name] == name
-    return stats[:home][:colors]
+    team = :home
   elsif stats[:away][:team_name] == name
     return stats[:away][:colors]
   else
