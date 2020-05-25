@@ -171,6 +171,5 @@ def team_names
   stats = game_hash
   names = []
   stats.each { |team, info|
-    
-    
+    names << info[:team_names]
   }
