@@ -204,7 +204,7 @@ def big_shoe_rebounds
   stats.each { |team, team_hash|
     team_hash[:players].each { |player_hash|
       if largest_shoe_size == nil or player_hash[:shoe] > largest_shoe_size
-        
+        num_rebounds = player_hash[:rebounds]
       end
     }
   }
