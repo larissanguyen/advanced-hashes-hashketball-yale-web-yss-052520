@@ -141,6 +141,4 @@ def num_points_scored(name)
       team = :away
     end
   }
-  #find the score
-  stats[team][:players][]
 end
